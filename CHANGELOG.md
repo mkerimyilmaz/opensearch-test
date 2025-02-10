@@ -14,6 +14,23 @@ Inspired from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Fixed
 
+## [2.10.4] - 06/05/2024
+### Added
+- Added support for [text embedding processor](https://opensearch.org/docs/latest/ingest-pipelines/processors/text-embedding/) ([#1007](https://github.com/opensearch-project/opensearch-java/pull/1007))
+
+### Dependencies
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+- ApacheHttpClient5Transport requires Apache Commons Logging dependency ([#1003](https://github.com/opensearch-project/opensearch-java/pull/1003))
+- Preserve caller information in stack traces when synchronous callers use asynchronous transports ([#656](https://github.com/opensearch-project/opensearch-java/pull/656))
+- Fix java.lang.NoSuchMethodError: org.apache.http.client.utils.URLEncodedUtils.formatSegments w/o httpclient ([#999](https://github.com/opensearch-project/opensearch-java/pull/999))
+
 ### Security
 
 ## [2.10.3] - 05/16/2024
@@ -387,8 +404,9 @@ Inspired from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Fix StoryStats numeric value out of range of int ([#489](https://github.com/opensearch-project/opensearch-java/pull/489))
  
 ### Security
+[Unreleased 2.x]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.4...2.x
+[2.10.4]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.3...v2.10.4
 
-[Unreleased 2.x]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.3...2.x
 [2.10.3]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.2...v2.10.3
 [2.10.2]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.1...v2.10.2
 [2.10.1]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.0...v2.10.1
