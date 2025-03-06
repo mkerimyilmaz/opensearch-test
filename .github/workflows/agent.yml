@@ -18,5 +18,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          OPENAI_KEY: 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
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
