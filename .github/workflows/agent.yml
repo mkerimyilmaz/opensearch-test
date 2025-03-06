@@ -1,0 +1,22 @@
+on:
+  pull_request:
+    types: [ opened, reopened, ready_for_review ]
+  issue_comment:
+jobs:
+  pr_agent_job:
+    if: ${{ github.event.sender.type != 'Bot' }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: write
+    name: Run pr agent on every pull request, respond to user comments
+    steps:
+      - name: PR Agent action step
+        id: pragent
+        uses: mkerimyilmaz/pr-agent-test@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          OPENAI_KEY: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
