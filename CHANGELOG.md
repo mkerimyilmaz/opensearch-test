@@ -12,7 +12,24 @@ Inspired from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ### Removed
 
+
+### Security
+
+## [2.10.3] - 05/16/2024
+### Added
+
+### Dependencies
+- Bumps `io.github.classgraph:classgraph` from 4.8.170 to 4.8.172
+
+### Changed
+
+### Deprecated
+
+### Removed
+
 ### Fixed
+- Fix the deserialization of SortOptions ([#981](https://github.com/opensearch-project/opensearch-java/pull/981))
+- Generic HTTP Actions in Java Client does not work with AwsSdk2Transport ([#978](https://github.com/opensearch-project/opensearch-java/pull/978))
 
 ### Security
 
@@ -30,8 +47,6 @@ Inspired from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 ### Fixed
 - Fix integer overflow for variables in indices stats response ([#960](https://github.com/opensearch-project/opensearch-java/pull/960))
 - Fix composite aggregations for search requests ([#967](https://github.com/opensearch-project/opensearch-java/pull/967))
-
-### Security
 
 ## [2.10.1] - 04/16/2024
 ### Added
@@ -371,8 +386,6 @@ Inspired from [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Fix StoryStats numeric value out of range of int ([#489](https://github.com/opensearch-project/opensearch-java/pull/489))
  
 ### Security
-
-[Unreleased 2.x]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.2...2.x
 [2.10.2]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.1...v2.10.2
 [2.10.1]: https://github.com/opensearch-project/opensearch-java/compare/v2.10.0...v2.10.1
 [2.10.0]: https://github.com/opensearch-project/opensearch-java/compare/v2.9.1...v2.10.0
